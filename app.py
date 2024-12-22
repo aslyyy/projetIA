@@ -66,7 +66,7 @@ if uploaded_file:
 
             # Faire une prédiction
             prediction = model.predict([list(features.values())])
-            result = "Malware" if prediction[0] == 1 else "Légitime"
+            result = "Malware" if prediction[0] == 1 else "Non Malware"
 
             # Afficher le résultat dans une métrique
             st.subheader("Résultat de la Détection")
